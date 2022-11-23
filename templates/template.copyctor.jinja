@@ -1,5 +1,5 @@
 {%- if copy_constructor -%}
-{% if namespace != "" %}{{namespace|upper}}::{% endif %}{{name}}(const {{name}}& other)
+{% if namespace != "" %}{{namespace|upper}}::{% endif %}{{name}}::{{name}} (const {{ name}}& other)
 {
 }//Copy constructor
 {% endif %}

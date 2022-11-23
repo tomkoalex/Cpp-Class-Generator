@@ -5,10 +5,10 @@ class {{name}}
 {
     public:
     {{name}}();
-    {% if copy_constructor %}{{name}}(const {{name}}& other);{% endif %}
-    {% if copy_assignment %}{{name}}& operator=(const {{name}}& other);{% endif %}
-    {% if move_constructor %}{{name}}({{name}}&& other);{% endif %}
-    {% if move_assignment %}{{name}}& operator=({{name}}&& other);{% endif %}
+    {% if copy_constructor %}{{name}}(const {{name}}& other);{% endif -%}
+    {% if copy_assignment %}{{name}}& operator=(const {{name}}& other);{% endif -%}
+    {% if move_constructor %}{{name}}({{name}}&& other);{% endif -%}
+    {% if move_assignment %}{{name}}& operator=({{name}}&& other);{% endif -%}
     {% if destructor %} ~{{name}}();{% endif %}
 
     protected:

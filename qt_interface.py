@@ -55,7 +55,7 @@ class MyWidget(QWidget):
             'Class name': [data[0][4], 'Class name or names'],
         }
 
-        self.ctor_cheques = ['Copy ctor', 'Move ctor', 'Copy assign', 'Move assign', 'final', 'Dctor']
+        self.ctor_cheques = ['Copy ctor', 'Copy Assign', 'Move ctor', 'Move assign', 'final', 'Dctor']
 
         for index, (text, vls) in enumerate(self.labels.items()):
             self.lbl = QLabel(self)
@@ -124,12 +124,16 @@ class MyWidget(QWidget):
         base_classes = list(map(str.strip, qes[3].text().split(",")))
         names = list(map(str.strip, qes[4].text().split(",")))
         copy_constructor = cheques[0].isChecked()
-        copy_assignment = cheques[0].isChecked()
-        move_constructor = cheques[0].isChecked()
-        move_assignment = cheques[0].isChecked()
-        is_final = cheques[0].isChecked()
-        destructor = cheques[0].isChecked()
-        class_constructor = ClassConstructor(creator, includes, namespace, base_classes, names,
+        copy_assignment = cheques[1].isChecked()
+        move_constructor = cheques[2].isChecked()
+        move_assignment = cheques[3].isChecked()
+        is_final = cheques[4].isChecked()
+        destructor = cheques[5].isChecked()
+        class_constructor = ClassConstructor(creator,
+                                             includes,
+                                             namespace,
+                                             base_classes,
+                                             names,
                                              copy_constructor,
                                              copy_assignment,
                                              move_constructor,
