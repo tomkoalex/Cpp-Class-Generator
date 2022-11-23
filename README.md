@@ -30,7 +30,7 @@ Run main.py with or without parameters
 
 ### Desktop (run without parameters)
 
-![](.\templates\img\CPPClassGenerator.JPG)
+![](https://github.com/tomkoalex/Cpp-Class-Generator/blob/main/templates/img/CPPClassGenerator.JPG)
 
 ### Console
 
