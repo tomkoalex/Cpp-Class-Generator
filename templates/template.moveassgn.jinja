@@ -1,0 +1,9 @@
+{%- if move_assignment -%}
+{% if namespace != "" %}{{namespace|upper}}::{% endif %}{{name}}& operator=({{name}} &&other)
+{
+    if (this != &other)
+    {
+    }
+    return *this;
+}//Move assign operator
+{% endif %}

@@ -1,0 +1,5 @@
+{% if includes is defined and includes|length > 1 -%}
+{% for inc in includes -%}
+#include "{{ inc }}"
+{% endfor -%}
+{% endif -%}

@@ -1,0 +1,20 @@
+//
+//  {{name}}.cpp
+//  Copyright© 2022 {{creator}}. All rights reserved®.
+//
+
+#include "{{name}}.h"
+
+{% if namespace != "" %}{{namespace|upper}}::{% endif %}{{name}}::{{name}}()
+{
+}//Constructor
+
+{% include "template.copyctor.jinja" %}
+{% include "template.copyassgn.jinja" %}
+{% include "template.movector.jinja" %}
+{% include "template.moveassgn.jinja" %}
+{% if namespace != "" %}{{namespace|upper}}::{% endif %}{{name}}::~{{name}}()
+{
+}//Destructor
+
+//{{name}}.cpp

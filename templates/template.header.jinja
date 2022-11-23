@@ -1,0 +1,17 @@
+//
+//  {{name}}.h
+//  Copyright© {{ year }}. {% if creator != "" %} Creator: {{creator}} {% endif %}. All rights reserved®.
+//
+
+#ifndef {% if namespace is defined and namespace|length > 0 %}_{{namespace|upper}}{% endif %}_{{name|upper}}_H_
+#define {% if namespace is defined and namespace|length > 0 %}_{{namespace|upper}}{% endif %}_{{name|upper}}_H_
+#pragma once
+
+{% include "template.includes.jinja" -%}
+
+{% if namespace != "" %}
+{% include "template.namespace.jinja" %}
+{% else %}
+{% include "template.class.jinja" %}
+{% endif %}
+#endif//{% if namespace is defined and namespace|length > 0 %}_{{namespace|upper}}{% endif -%}_{{name|upper}}_H_

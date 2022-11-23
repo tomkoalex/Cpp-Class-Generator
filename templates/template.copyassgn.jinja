@@ -1,0 +1,9 @@
+{%- if copy_assignment -%}
+{% if namespace != "" %}{{namespace|upper}}::{% endif %}{{name}}& operator=(const{{name}}& other)
+{
+    if (this != &other)
+    {
+    }
+    return *this;
+}//Copy assign operator
+{% endif %}
