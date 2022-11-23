@@ -21,7 +21,7 @@ Cross-platform
 Clone the repo
 
 ```sh
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/tomkoalex/Cpp-Class-Generator.git
 ```
 
 Run main.py with or without parameters
@@ -30,7 +30,7 @@ Run main.py with or without parameters
 
 ### Desktop (run without parameters)
 
-![](C:\Users\User\PycharmProjects\CPPClassGenerator\templates\img\CPPClassGenerator.JPG)
+![](.\templates\img\CPPClassGenerator.JPG)
 
 ### Console
 
@@ -60,4 +60,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Alex Tomko - tomko.alex@gmail.com
 
-Project Link: 
+Project Link: https://github.com/tomkoalex/Cpp-Class-Generator.git
